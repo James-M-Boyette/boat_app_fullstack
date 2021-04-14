@@ -1,0 +1,10 @@
+<h2> Welcome to the index </h2>
+
+
+<% @boats.each do |boat| %>
+  <p><%= boat.name %></p>
+  <p><%= boat.price %></p>
+  <p><%= boat.capacity %></p>
+  <p><%= boat.model %></p>
+  <hr>
+<% end %>
