@@ -1,0 +1,9 @@
+<h4>This is a new page</h4>
+
+<%= form_tag "/boats", method: :post do %>
+<p> Name: <input type="text" name="name"></p>
+<p> Price: <input type="text" name="price"></p>
+<p> Capacity: <input type="text" name="capacity"></p>
+<p> Model: <input type="text" name="model"></p>
+<input type="submit" value="Make a boat">
+<% end %>
