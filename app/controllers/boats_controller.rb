@@ -5,6 +5,7 @@ class BoatsController < ApplicationController
   end
 
   def show
-    @boat = Boat.id
+    @boat = Boat.find_by(id: params[:id])
+    render "show.html.erb"
   end
 end
